@@ -5,15 +5,6 @@
 
 
 
-#### Criterios de Evaluación
-
-- **AUC-ROC < 0.75:** 0 SP
-- **0.75 ≤ AUC-ROC < 0.81:** 4 SP
-- **0.81 ≤ AUC-ROC < 0.85:** 4.5 SP
-- **0.85 ≤ AUC-ROC < 0.87:** 5 SP
-- **0.87 ≤ AUC-ROC < 0.88:** 5.5 SP
-- **AUC-ROC ≥ 0.88:** 6 SP
-
 ## Librerías Usadas
 
 ### Procesamiento de Datos
