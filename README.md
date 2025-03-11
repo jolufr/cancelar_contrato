@@ -1,43 +1,45 @@
-# Predicción de Cancelaciones de Clientes
+# 🔮 Predicción de Cancelaciones de Clientes
 
-En este proyecto se desarrolló un modelo predictivo con el propósito de predecir la probabilidad de cancelación de clientes a partir de la columna **EndDate**, en la cual los clientes activos están identificados con el valor "No". Se busca, además, identificar las características clave que influyen en la cancelación para implementar estrategias efectivas de retención.
+## 🔍 Introducción
+Este proyecto desarrolla un modelo predictivo para estimar la probabilidad de cancelación de clientes.
 
-El proceso incluyó la revisión y limpieza de los datos para asegurar la integridad de la información, seguido de un análisis exploratorio que permitió evaluar el balance de clases y la relevancia de las variables relacionadas con servicios, planes y demografía. Se aplicaron técnicas de transformación y codificación de variables, así como la creación de nuevas características que enriquecen el conjunto de datos. Posteriormente, se entrenaron diversos modelos de Machine Learning —entre ellos Regresión Logística, Random Forest y métodos de boosting— evaluando su desempeño principalmente con la métrica **AUC-ROC** y complementariamente con la exactitud.
+## 🎯 Objetivo
+Predecir la probabilidad de cancelación de clientes y detectar factores determinantes en la retención.  
 
-Los resultados obtenidos en este proyecto permitirán identificar a los clientes con mayor riesgo de cancelar sus servicios, facilitando la implementación de campañas específicas y estrategias de retención. Con la adopción de este modelo predictivo, se espera mejorar la satisfacción del cliente y optimizar la gestión operativa, reduciendo significativamente la tasa de cancelación.
+## 🛠️ Tecnologías Utilizadas
+- **Procesamiento de Datos**: pandas, numpy, IPython.display, tqdm  
+- **Visualización**: matplotlib, seaborn, collections.Counter  
+- **Modelado Predictivo**:  
+  - **Manejo de desequilibrio**: imblearn.over_sampling.SMOTE  
+  - **Modelos utilizados**:  
+    - Regresión Logística  
+    - Random Forest  
+    - XGBoost  
+    - LightGBM  
+    - MLPClassifier  
+  - **Evaluación de Modelos**:  
+    - AUC-ROC  
+    - Accuracy  
+    - Log Loss  
+    - SHAP para interpretabilidad  
 
+## 📈 Pasos Clave (Metodología)
+### 1️⃣ Preparación y Análisis Exploratorio de Datos (EDA)
+- Revisión y limpieza de los datos para asegurar integridad.  
+- Análisis de balance de clases y relevancia de variables (servicios, planes, demografía).  
+- Creación de nuevas características para mejorar la representación del problema.  
 
-## Librerías Usadas
+### 2️⃣ Modelado Predictivo
+- Aplicación de técnicas de transformación y codificación de variables.  
+- Entrenamiento de modelos de Machine Learning con validación cruzada.  
+- Evaluación del desempeño usando AUC-ROC, exactitud y otras métricas clave.  
 
-### Procesamiento de Datos
-- `pandas`
-- `numpy`
-- `IPython.display`
-- `tqdm`
+## 📊 Resultados
+El modelo desarrollado permite:  
+- Identificar clientes con alto riesgo de cancelación.  
+- Diseñar estrategias de retención basadas en insights clave.  
+- Optimizar la gestión operativa y mejorar la satisfacción del cliente.  
 
-### Visualización
-- `matplotlib.pyplot`
-- `seaborn`
-- `collections.Counter`
-
-### Modelado Predictivo
-- `imblearn.over_sampling.SMOTE`
-- `sklearn.model_selection.train_test_split`
-- `sklearn.ensemble.RandomForestClassifier`
-- `xgboost.XGBClassifier`
-- `lightgbm.LGBMClassifier`
-- `sklearn.neural_network.MLPClassifier`
-- `sklearn.metrics.accuracy_score`
-- `sklearn.metrics.roc_auc_score`
-- `sklearn.metrics.roc_curve`
-- `sklearn.metrics.log_loss`
-- `shap`
-
----
-
-## Cómo Ejecutar el Proyecto
-
-1. **Clona el Repositorio:**
-   ```bash
-   git clone https://github.com/usuario/proyecto-cancelacion-clientes.git
-   cd proyecto-cancelacion-clientes
+## 🚀 Cómo Ejecutarlo
+```bash
+clonar este repositorio.
